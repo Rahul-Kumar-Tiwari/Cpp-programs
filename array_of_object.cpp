@@ -1,9 +1,8 @@
-#include<iostream>
+#include<bits/stdc++.h>
 
 using namespace std;
-
+// Create a class for books 
 class books
-
 {
 
 public:char tit1e[30];
@@ -14,60 +13,39 @@ public:
 
 void getdata ();
 
-void putdata ();
+void showdata ();
 
 } ;
 
-void books::getdata()
+void books :: getdata()
 {
-cout<<"Title:”;
+    cout<<"Title:â€;
 
-Cin>>title;
+    cin>>title;
 
-cout<<"Price:”;
+    cout<<"Price:â€;
 
-cin>>price;
-
- 
-
+    cin>>price;
 }
 
-void books :: putdata ()
-
+void books :: showdata ()
 {
-
-cout<<"Title:"<<title<< "\n";
-
-cout<<"Price:"<<price<< "\n”;
-
-const int size=3 ;
-
+    cout<<"Title:"<<title<< "\n";
+    cout<<"Price:"<<price<< "\nâ€;
+    const int size=3 ;
+}
 int main ()
-
 {
-
 books book[size] ;
-
 for(int i=0;i<size;i++)
-
 {
-
-cout<<"Enter details o£ book "<<(i+1)<<"\n";
-
-book[i].getdata();
-
+    cout<<"Enter details of book "<<(i+1)<<"\n";
+    book[i].getdata();
 }
-
 for(int i=0;i<size;i++)
-
 {
-
-cout<<"\nBook "<<(i+l)<<"\n";
-
-book[i].putdata() ;
-
+    cout<<"\nBook "<<(i+l)<<"\n";
+    book[i].showdata() ;
 }
-
 return 0;
-
 }
